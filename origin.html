@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <style>
+           .m_parent{
+            transform-origin: -50px -50px;
+            /* state 1 source/from */
+            width:400px;
+            height:400px;
+            background-color: gray;
+            margin: 200px auto;
+            transform: rotate(0deg);
+            transition: all 3s linear;
+           }
+           .m_parent:hover{
+             /* state 2  destination/to */
+             transform: rotate(360deg);
+           }
+       </style>
+    </head>
+   <body>
+         <div class="m_parent"></div>
+   </body>
+</html>
